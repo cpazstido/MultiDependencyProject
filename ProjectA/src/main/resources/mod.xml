@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<REQUEST> <!--请求报文根节点 -->
+    <CONTROL>
+        <REQUEST_ID>${requestId}</REQUEST_ID>
+        <SERVICE_ID></SERVICE_ID>
+        <APP_ID></APP_ID>
+        <APP_KEY></APP_KEY>
+        <ACCESS_TOKEN></ACCESS_TOKEN>
+        <HASH></HASH>
+        <EXT></EXT>
+        <REQUEST_TIME>${requestTime}</REQUEST_TIME>
+    </CONTROL>
+    <DATA>    <!--业务请求数据根节点 -->
+        <USER>
+            <USER_NAME>${userName}</USER_NAME>
+            <ACCOUNT_TYPE>${accountType}</ACCOUNT_TYPE>
+        </USER>
+    </DATA>
+</REQUEST>
