@@ -7,13 +7,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import java.nio.charset.Charset;
 
 @Controller
+@RequestMapping("/")
 public class TestController {
-    @RequestMapping(value = "index")
+    @RequestMapping(value = "/index1")
     public String index(Model model){
         String str = "加了我科技风";
         model.addAttribute("str","几个库了感觉");
-        System.out.println(System.getProperty("file.encoding"));
-        System.out.println(Charset.defaultCharset().name());
         return "index";
     }
 

@@ -19,6 +19,9 @@
          http://www.springframework.org/schema/task
     http://www.springframework.org/schema/task/spring-task-3.0.xsd">
 
+    <mvc:annotation-driven/>
+    <mvc:default-servlet-handler/>
+
     <context:component-scan base-package="com">
         <context:include-filter type="annotation"
                                 expression="org.springframework.stereotype.Controller" />
@@ -31,6 +34,8 @@
         <beans:property name="prefix" value="/WEB-INF/views/" />
         <beans:property name="suffix" value=".jsp" />
     </beans:bean>
+
+    <!--<mvc:resources mapping="/**" location="/" />-->
 
 
 
